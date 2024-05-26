@@ -1,0 +1,168 @@
+@import "../../app.scss";
+
+.review-content{
+    background: linear-gradient(180deg, #111132, #0c0c1d, #111132);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 96px;
+        font-weight: bold;
+        border-bottom: 1px solid gray; 
+
+        @include mobile{
+            font-size: 72px;
+            color: orange;
+        }
+    }
+
+    h1:hover{
+        color: orange;
+    }
+}
+
+.reviews {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    overflow: hidden;
+   
+}
+
+.table {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    padding-top: 60px;
+}
+
+.vertical-container1 {
+    border-radius: 16px;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-11xl);
+    width: 530px;
+    height: 340px;
+    background-color: #ffffffef;
+    color: black;
+    border-radius: 16px;
+    padding: 0 30px;
+}
+
+.vertical-container2 {
+    position: relative;
+    width: 100%;
+}
+
+.frame-parent {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-mini);
+}
+
+.vector-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-5xl);
+}
+
+.vector-icon15 {
+    position: relative;
+    border-radius: var(--br-xs);
+    width: fit-content;
+    height: 2rem;
+    padding-bottom: 10px;
+}
+
+.they-are-able {
+    position: relative;
+    line-height: 25px;
+    font-weight: 500;
+    width: fit-content;
+}
+
+.vertical-container3 {
+    position: relative;
+    width: 100%;
+    color: black;
+}
+
+.switch-icon { 
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+}
+
+.switch-container {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    gap: 1rem;
+}
+
+.paragraph-container1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ceo-noonbrew,
+.joew-harbert {
+  position: relative;
+  top: 0;
+  left: 0;
+  line-height: 25px;
+}
+
+.ceo-noonbrew {
+    font-size: var(--caption-caption-13-semibold-size);
+    line-height: 24px;
+    font-weight: 500;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+  }
+
+.Person {
+    flex-direction: row;
+}
+
+@media (max-width: 1600px) {
+    .reviews{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        justify-content: flex-start;
+        padding: 1rem 0.5rem;
+        flex-direction: row;
+    }
+    .vertical-container1 {
+        width: 400px;
+        height: fit-content;
+        padding: 20px;
+        justify-content: start;
+    }
+    .they-are-able{
+        font-size: 1rem;
+    }
+}

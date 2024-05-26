@@ -1,0 +1,64 @@
+@import "../../app.scss";
+
+.skills{
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 0;
+    gap: 50px;
+
+    @include mobile{
+        padding: 10px;
+        color: orange;
+        gap:10px
+      }
+
+    .wrapper{
+        max-width: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .bar {
+        margin: 1rem 0;
+        width: 100%;
+        padding: 0 3rem;
+    }
+
+    .subtext {
+        border-bottom: 1px solid lightgrey;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 96px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        
+        h1{
+            z-index: 1;
+            
+        }
+        
+        @include mobile{
+            font-size: 72px;
+            color: orange;
+          }
+    
+    .subtext:hover {
+          color: orange;
+        }
+      }
+    
+    .skillBox {
+        width: 100%;
+        padding: 40px 0;
+
+        
+        
+    }
+    
+}

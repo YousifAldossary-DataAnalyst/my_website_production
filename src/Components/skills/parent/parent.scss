@@ -1,0 +1,46 @@
+@import "../../../app.scss";
+
+.ContentView {
+    @include mobile {
+        padding-top: 30px;
+      }
+.wrapp {
+  display: flex;
+  align-items: left;
+  gap: 50px;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  
+
+  .skillListContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 10px;
+
+    @include mobile {
+      padding: 0;
+    }
+  }
+
+  .skillListSecondContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 10px;
+    @include mobile {
+      padding: 0;
+    }
+  }
+}
+}

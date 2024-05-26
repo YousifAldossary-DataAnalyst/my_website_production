@@ -1,0 +1,68 @@
+@import "../../../app.scss";
+
+.tabsContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+
+  .block-tabs {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    @include mobile{
+      gap: 10px;
+      flex-direction: row;
+    }
+    
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      flex-direction: row;
+      color: lightgrey;
+      padding: 20px;
+      font-size: 16px;
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-weight: bold;
+      word-spacing: 5px;
+      letter-spacing: 2px;
+      border-bottom: 1px solid orange;
+
+      @include mobile{
+        width: fit-content;
+        
+      }
+    }
+
+    .active-tabs {
+      background-color: transparent;
+      border: none;
+      border: 1px solid orange;
+      border-radius: 16px;
+    }
+
+    .tabs {
+      border-bottom: orange;
+      border-bottom: 1px solid orange;
+
+      @include mobile{
+        font-size: 14px;
+      }
+  
+    }
+
+    .tabs:hover{
+      color: orange;
+      border-bottom: 1px solid orange;
+    }
+
+  }
+}
