@@ -87,15 +87,15 @@ export const Contact = () => {
             initial={{ opacity: 1 }}
             whileInView={{ opacity: 0, x:500 }}
             transition={{ delay: 3, duration: 1 }}
-          > */}
-{/*             <motion.img
+          >
+            <motion.img
               src={message}
               alt="loading..."
               initial={{ pathLength: 0 }}
               animate={isInView && { pathLength: 1 }}
               transition={{ delay: 3, duration: 1 }}
-            /> */}
-          </motion.div>
+            />
+          </motion.div> */}
           <motion.form
             onSubmit={sendEmail}
             ref={formRef}
