@@ -96,13 +96,13 @@ export const Contact = () => {
               transition={{ delay: 3, duration: 1 }}
             /> */}
           </motion.div>
-{/*           <motion.form
+          <motion.form
             onSubmit={sendEmail}
             ref={formRef}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 3, duration: 1 }}
-          > */}
+          >
             <input type="text" required placeholder="Name" name="name" />
             <input type="email" required placeholder="Email" name="email" />
             <textarea rows={8} placeholder="Message" name="message" />
