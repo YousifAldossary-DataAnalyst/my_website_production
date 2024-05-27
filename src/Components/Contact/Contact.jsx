@@ -101,7 +101,7 @@ export const Contact = () => {
             ref={formRef}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ delay: 3, duration: 1 }}
+            transition={{ delay: 1.5, duration: 1 }}
           >
             <input type="text" required placeholder="Name" name="name" />
             <input type="email" required placeholder="Email" name="email" />
